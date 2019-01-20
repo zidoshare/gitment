@@ -58,6 +58,7 @@ class Gitment {
       oauth: {},
       perPage: 20,
       maxCommentHeight: 250,
+      crossServer:'https://gh-oauth.imsun.net',
     }, options)
 
     this.useTheme(this.theme)
@@ -99,7 +100,7 @@ class Gitment {
       }, options)
 
       this.state.user.isLoggingIn = true
-      http.post('https://gh-oauth.imsun.net', {
+      http.post(this.remoteUrl, {
           code,
           client_id,
           client_secret,

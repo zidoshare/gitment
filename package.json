@@ -1,11 +1,11 @@
 {
-  "name": "gitment",
+  "name": "@zidoshare/gitment",
   "version": "0.0.3",
   "description": "A comment system based on GitHub Issues",
   "main": "./dist/gitment.js",
   "author": {
-    "name": "Shiquan Sun",
-    "url": "https://github.com/imsun"
+    "name": "zidoshare",
+    "url": "https://github.com/zidoshare"
   },
   "keywords": [
     "comment system",
@@ -13,12 +13,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/imsun/gitment"
+    "url": "https://github.com/zidoshare/gitment"
   },
   "bugs": {
-    "url": "https://github.com/imsun/gitment/issues"
+    "url": "https://github.com/imsun/zidoshare/issues"
   },
-  "homepage": "https://github.com/imsun/gitment",
+  "homepage": "https://github.com/zidoshare/gitment",
   "scripts": {
     "build": "babel src --out-dir dist --ignore test.js --source-maps & NODE_ENV=production webpack --config webpack.config.js --progress --profile --colors",
     "dev": "webpack-dev-server --config webpack.dev.config.js --host 0.0.0.0 --progress --profile --colors"
